@@ -58,5 +58,17 @@
     "name": "Alec Howard",
     "email": "Donec.elementum@scelerisquescelerisquedui.net",
     "phone": "(748) 206-2688"
+  },
+  {
+    "name": "student",
+    "email": "student@mgmail.com",
+    "phone": "(380) 777-7777",
+    "id": "c842ee5f-7cb2-427a-913d-ad9ee8c49f92"
+  },
+  {
+    "name": "new student3",
+    "email": "student3@mgmail.com",
+    "phone": "(380) 778-8888",
+    "id": "deec87e0-8557-4af6-b169-382183ace93a"
   }
 ]
