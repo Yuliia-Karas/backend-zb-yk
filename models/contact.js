@@ -32,21 +32,21 @@ contactSchema.post("save", handleMongooseError);
 const addSchema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().pattern(emailReg).required(),
-    phone: Joi.string().pattern(phoneReg).required(),
-  favorite:Joi.boolean(),
+  phone: Joi.string().pattern(phoneReg).required(),
+  favorite: Joi.boolean(),
 });
 
 const updateFavoriteSchema = Joi.object({
-    favorite: Joi.boolean().required(),
+  favorite: Joi.boolean().required(),
 });
 
 const schemas = {
-    addSchema,
-    updateFavoriteSchema,
+  addSchema,
+  updateFavoriteSchema,
 };
 const Contact = model("contact", contactSchema);
 
 module.exports = {
-    Contact,
-    schemas
+  Contact,
+  schemas,
 };
