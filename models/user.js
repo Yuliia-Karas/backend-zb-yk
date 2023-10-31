@@ -50,8 +50,3 @@ module.exports = {
     User,
     schemas,
 }
-
-// const updateSubscriptionSchema = Joi.object({
-//   subscription: Joi.string().valid("starter", "pro", "business").required(),
-// });
-
