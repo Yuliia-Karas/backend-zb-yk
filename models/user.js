@@ -13,14 +13,16 @@ const userSchema = new Schema({
         type: String,
         required: true,
         match: emailReg,
-        unique:true,
-        
+        unique:true,   
     },
     password: {
         type: String,
         minlength: 6,
-        required: true,
-        
+        required: true, 
+    },
+    token: {
+        type: String,
+        default:null,
     }
 }, { versionKey: false, timestamps: true });
 
@@ -37,14 +39,12 @@ const loginSchema = Joi.object({
   password: Joi.string().min(6).required(),
 });
 
-
 const schemas = {
     registerSchema,
     loginSchema,
 };
 
 const User = model('user', userSchema);
-
 
 module.exports = {
     User,

@@ -49,6 +49,8 @@ const login = async (req, res) => {
     token,
   });
 };
+        
+
 module.exports = {
   register: ctrlWrapper(register),
   login: ctrlWrapper(login),
